@@ -8,9 +8,9 @@ Prerequisite: Following should be installed to execute it:
 4. Git Bash should be installed
 
 if you need to run it on eclipse IDE then below applications/plugins are also needed.
-Eclipse
-maven-eclipse-plugin
-Cucumber-eclipse-plugin
+a. Eclipse
+b. maven-eclipse-plugin
+c. Cucumber-eclipse-plugin
 
 Step to Execute this Assignment:
 1. Select folder on your system in order to clone Git repository.
