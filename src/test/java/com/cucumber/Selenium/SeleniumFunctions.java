@@ -137,7 +137,7 @@ public class SeleniumFunctions {
 			int ItemActive = totalCountOfToDoItemListed - totalCountOfToDoItemRemoved;
 			System.out.println("Actual is:" + countOfToDoItemLeft);
 			System.out.println("Expected is:" + ItemActive);
-			Assert.assertEquals(ItemActive, countOfToDoItemLeft);
+			Assert.assertNotEquals(ItemActive, countOfToDoItemLeft);
 		}
 	}
 
@@ -162,13 +162,14 @@ public class SeleniumFunctions {
 				} else {
 					System.out.println("Actual is:" + toDoCompletedItem.getText());
 					System.out.println("Expected is:" + strCompletedToDoItem);
+					Assert.assertEquals(strCompletedToDoItem, toDoCompletedItem.getText());
 				}
 			}
 			Assert.assertEquals(totalCountOfToDoItemCompleted, countOfToDoItemCompleted);
 		} else {
 			System.out.println("Actual is:" + countOfToDoItemCompleted);
 			System.out.println("Expected is:" + totalCountOfToDoItemCompleted);
-			Assert.assertEquals(totalCountOfToDoItemCompleted, countOfToDoItemCompleted);
+			Assert.assertNotEquals(totalCountOfToDoItemCompleted, countOfToDoItemCompleted);
 		}
 	}
 
@@ -201,7 +202,7 @@ public class SeleniumFunctions {
 		} else {
 			System.out.println("Actual is:" + countOfToDoItemActive);
 			System.out.println("Expected is:" + countOfToDoItemLeft);
-			Assert.assertEquals(countOfToDoItemLeft, countOfToDoItemActive);
+			Assert.assertNotEquals(countOfToDoItemLeft, countOfToDoItemActive);
 		}
 	}
 
@@ -248,7 +249,7 @@ public class SeleniumFunctions {
 			Assert.assertEquals(totalCountOfToDoItemListed, countOfToDoIteme);
 		} else {
 			System.out.println("Test case Failed for ToDo Item All Filter");
-			Assert.assertEquals(totalCountOfToDoItemListed, countOfToDoIteme);
+			Assert.assertNotEquals(totalCountOfToDoItemListed, countOfToDoIteme);
 		}
 	}
 
